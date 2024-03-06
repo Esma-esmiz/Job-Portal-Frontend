@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.user-setting{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+
+.notif-list span{
+    font-size: 12px;
+    margin-left: 2rem;
+}

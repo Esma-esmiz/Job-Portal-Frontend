@@ -1,0 +1,54 @@
+.container {
+  padding-right: 2rem;
+  padding-top: 4rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+mat-form-field {
+  margin-left: 15%;
+  height: 70px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 7px;
+  /* padding-right: 70px; */
+}
+.search fa-icon{
+font-size: 25px;
+filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+transform: rotate(90deg);
+margin: 0 30px;
+}
+input {
+  height: 42px;
+  max-width: 350px;
+  width: 100%;
+  border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+span{
+    font-size: 19px;
+    margin-top: 11px;
+}

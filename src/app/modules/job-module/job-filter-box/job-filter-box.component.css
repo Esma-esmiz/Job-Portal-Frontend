@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* max-width: 35%; */
+    /* padding: 2rem 0; */
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.heading button{
+    color: #60caee;
+    background-color: #FAFAFA;
+    padding: 0px 25px;
+}
+
+.filter-box{
+    background-color: #FAFAFA;
+    font-size: 12px !important;
+}
+
+.mat-expansion-panel-body{
+    padding-bottom: 0px;
+}
+mat-list{
+    padding: 0;
+}

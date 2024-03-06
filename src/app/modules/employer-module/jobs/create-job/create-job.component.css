@@ -1,0 +1,90 @@
+.container{
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+}
+.back{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.back div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back fa-icon{
+    display: flex;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+    height: fit-content;
+}
+
+.back span:nth-last-child(1), .job-form span:nth-child(1){
+    font-weight: bold;
+}
+
+.job-form{
+   margin-top: 2rem; 
+   width: 80%;
+}
+table {
+    border-collapse: separate;
+    /* border-spacing: 0 20px; */
+    width: 100%;
+}
+ 
+table {
+    /* border-spacing:  2rem 5px; */
+}
+table tr td:nth-child(1){
+     padding-right: 30px;
+    /* max-width: 50%; */ 
+}
+
+input {
+height: 15px;
+/* font-size: 12px; */
+}
+
+mat-form-field{
+    width: 100%;
+    padding: 0;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 10px;
+ }
+ .mat-form-field-infix {
+      padding:0;
+      border-top: 0;
+ }
+ 
+ /* //change top and padding-top as per required */
+ 
+ .mat-form-field-label-wrapper {
+     top: -0.84375em;
+     padding-top: 0.84375em;
+ }
+
+ button{
+    width: 200px;
+    border-radius: 10px;
+    height: 45px;
+    color: #fff;
+ }
+
+.submit{
+    background-color: #04ade6;
+    margin-left: 5rem;
+}
+.reset{
+    background-color: #ed7272;
+    margin-left: 2rem;
+
+}

@@ -1,0 +1,136 @@
+<div class="container">
+  <div class="back">
+    <a routerLink="/employer/jobs"><fa-icon [icon]="faArrowLeft"></fa-icon></a>
+    <div>
+      <span>Jobs</span>
+      <span>Add Job</span>
+    </div>
+  </div>
+  <div class="job-form">
+    <span>Job Details</span>
+    <form class="form">
+      <table class="title-vacancy" >
+        <tr>
+          <td>
+            <span>Title </span>
+            <mat-form-field class="example-full-width">
+              <mat-label>job title</mat-label>
+              <input matInput name="title" id="title" />
+            </mat-form-field>
+          </td>
+          <td>
+            <span>Vancacy Id </span>
+            <mat-form-field class="example-full-width">
+              <mat-label>Vacancy Id</mat-label>
+              <input matInput name="vacancyId" id="vacancyId" />
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <table class="date" >
+        <tr>
+          <td>
+            <span>Post Date </span>
+            <mat-form-field class="example-full-width">
+              <mat-label>Post Date( <span>date for open</span> )</mat-label>
+              <input matInput name="postDate" id="postDate" />
+            </mat-form-field>
+          </td>
+          <td>
+            <span>Closing Date </span>
+            <mat-form-field class="example-full-width">
+              <mat-label>Close Date</mat-label>
+              <input matInput name="closeDate" id="closeDate" />
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <table class="experience" >
+        <tr>
+          <td>
+            <span>Experience </span>
+            <mat-form-field class="example-full-width">
+              <mat-label>Minimum</mat-label>
+              <input matInput name="minExp" id="minExp" />
+            </mat-form-field>
+          </td>
+          <td>
+            <span>Experience </span>
+            <mat-form-field class="example-full-width">
+              <mat-label>Maximum</mat-label>
+              <input matInput name="maxExp" id="maxExp" />
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <table class="place-setup" >
+        <tr>
+          <td>
+            <span>Work Place </span>
+            <mat-form-field class="example-full-width">
+              <mat-label>Work Place</mat-label>
+              <input matInput name="workPlace" id="workPlace" />
+            </mat-form-field>
+          </td>
+
+          <td>
+            <span>Job Setup </span>
+            <mat-form-field>
+              <mat-label>Job Setup</mat-label>
+              <mat-select [formControl]="toppings" multiple>
+                <mat-select-trigger>
+                  {{toppings.value?.[0] || ''}}
+                  @if ((toppings.value?.length || 0) > 1) {
+                  <span class="example-additional-selection">
+                    (+{{ (toppings.value?.length || 0) - 1 }}
+                    {{ toppings.value?.length === 2 ? "other" : "others" }})
+                  </span>
+                  }
+                </mat-select-trigger>
+                @for (topping of toppingList; track topping) {
+                <mat-option [value]="topping">{{ topping }}</mat-option>
+                }
+              </mat-select>
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td>
+            <span>Job Category </span>
+            <mat-form-field>
+              <mat-label>Job Category</mat-label>
+              <mat-select [formControl]="toppings" multiple>
+                <mat-select-trigger>
+                  {{toppings.value?.[0] || ''}}
+                  @if ((toppings.value?.length || 0) > 1) {
+                  <span class="example-additional-selection">
+                    (+{{ (toppings.value?.length || 0) - 1 }}
+                    {{ toppings.value?.length === 2 ? "other" : "others" }})
+                  </span>
+                  }
+                </mat-select-trigger>
+                @for (topping of toppingList; track topping) {
+                <mat-option [value]="topping">{{ topping }}</mat-option>
+                }
+              </mat-select>
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+      <span>Resposibility </span>
+      <p>
+        <mat-form-field class="example-full-width">
+          <mat-label>Description</mat-label>
+          <textarea matInput placeholder="Resposibility" rows="6"> </textarea>
+        </mat-form-field>
+      </p>
+      <button mat-button type="submit" class="submit">Post Job</button>
+      <button mat-button type="reset" class="reset">Rest Form</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.nav{
+    display: flex;
+    justify-content: row;
+    justify-content: space-between;
+    min-height:4rem ;
+    background-color: #fafafa;
+    align-items: center;
+    padding:0 3rem;
+    /* position: absolute;
+    width: 100%; */
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+ 
+a{
+    text-decoration: none;
+    color:#04ade6;
+    padding: 0.4rem 1.5rem;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: #ebf1fa;
+}
+.menu-btn{
+display: flex;
+justify-content: space-between;
+/* width: 35%; */
+flex-wrap: nowrap;
+}
+.menu-btn span{
+    padding-left: 0.5rem;
+}
+/* user setting will move to self component */
+.user-setting{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 2%;
+}
+
+button fa-icon{
+    background-color: #ebf1fa;
+    border-radius: 50%;
+    padding: 0.5rem; 
+}

@@ -1,0 +1,51 @@
+<div class="nav">
+  <div><span>Future JObs</span></div>
+  <div class="menu-btn">
+    <a routerLink="/job-seeker/profile"> <fa-icon [icon]="faUser"></fa-icon> <span>Profile</span></a>
+    <a routerLink="/applied-jobs"> <fa-icon [icon]="faBriefcase"></fa-icon><span>Jobs</span></a>
+    <a href="">
+      <fa-icon [icon]="faCommentDots"></fa-icon><span>Messaging</span></a>
+  </div>
+  <div class="user-setting">
+    <div>
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="notification"
+        aria-label="Example icon-button with a menu"
+      >
+        <!-- <mat-icon>more_vert</mat-icon> -->
+        <fa-icon [icon]="faBell"></fa-icon>
+      </button>
+      <mat-menu #notification="matMenu">
+        <button mat-menu-item>
+          <span> first notification </span>
+          <span> second notification </span>
+        </button>
+      </mat-menu>
+    </div>
+
+    <div>
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <!-- <mat-icon>more_vert</mat-icon> -->
+        <fa-icon [icon]="faBell"></fa-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <fa-icon [icon]="faUser"></fa-icon>
+          <span>Profile</span>
+        </button>
+        <button mat-menu-item disabled>
+          <fa-icon [icon]="faBriefcase"></fa-icon>
+          <span>Applications</span>
+        </button>
+        <button mat-menu-item>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<app-job-seeker-nav style="position: sticky;"></app-job-seeker-nav>
+<div class="container">
+  <div class="left"  >
+    <div>
+      <mat-card class="profile">
+        <mat-card-header>
+          <div mat-card-avatar class="profile-picture"></div>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-card-title>Seeker Name</mat-card-title>
+          <mat-card-subtitle>email&#64;gmail.com</mat-card-subtitle>
+        </mat-card-content>
+        <mat-card-actions>
+          <a href="#"><fa-icon [icon]="faPen"></fa-icon> Edit Profile</a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="experience">
+      <div class="title">
+        <span>Work Experience</span>
+        <a href=""><fa-icon [icon]="faPen"></fa-icon></a>
+      </div>
+      <div class="list" *ngFor="let i of list">
+        <div>
+          <h3>Job title</h3>
+          <span>2 years</span>
+        </div>
+        <span class="info-under">company. fulltime</span>
+      </div>
+    </div>
+    <div class="related">
+      <span class="title"
+        >Recently Applied Jobs <fa-icon [icon]="faPen"></fa-icon
+      ></span>
+      <div class="list" *ngFor="let i of list">
+        <div>
+          <h3>Job title</h3>
+          <span><a href="">View</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <router-outlet></router-outlet> 
+  </div>
+</div>

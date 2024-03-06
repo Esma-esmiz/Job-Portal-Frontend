@@ -1,0 +1,66 @@
+.category-container, .block-header {
+  margin: 50px 0;
+}
+.category-container div:first-child, .block-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h1 {
+  font-weight: bolder;
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+  color: #28a1fc;
+}
+.grid-card-container {
+  /* padding-right: 10%; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-self:flex-start;
+  align-items: flex-end;
+  column-gap: 25px;
+  row-gap: 25px;
+  max-width: 95% ;
+}
+.category-card {
+  min-width: 200px;
+}
+.category-image {
+    background-size: cover;
+  }
+mat-card-header fa-icon {
+  max-width: 70x;
+  max-height: 20px;
+}
+ 
+mat-card-content {
+  font-weight: bold;
+}
+
+img{
+    background-size: cover;
+    max-width: 100%;
+}
+
+/*  for jobs card */
+.job-card {
+    min-width: 200px;
+  }
+
+  .top-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .top-header p{
+    color: #7f7ce8;
+    border: 2px solid #7f7ce8;
+    padding:3px 5px;
+    align-items: right;
+  }

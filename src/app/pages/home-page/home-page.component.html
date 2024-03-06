@@ -1,0 +1,91 @@
+
+<app-gust-header></app-gust-header>
+<div class="category-container">
+  <div>
+    <h1>Explore by <span style="color: #28a1fc">category</span></h1>
+    <h5>
+      <a href="#"
+        >Show all categories <fa-icon [icon]="faArrowRight"></fa-icon
+      ></a>
+    </h5>
+  </div>
+  <div class="grid-card-container">
+    <mat-card
+      class="category-card"
+      style="flex-grow: 1"
+      *ngFor="let item of items"
+    >
+      <mat-card-header>
+        <div
+          mat-card-avatar
+          class="category-image"
+          style="
+            background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+          "
+        ></div>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>Category title</p>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <a href="#"
+          >999 job available <fa-icon [icon]="faArrowRight"></fa-icon
+        ></a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+<div class="after-category-image"  >
+  <img src="../../../assets/images/Rectangle 25.png" alt="joinus image" />
+  <div style="position: absolute;">
+    <p></p>
+    <button mat-button>Join Us</button>
+  </div>
+</div>
+
+<div class="block-header">
+  <h1>Featured <span style="color: #28a1fc">jobs</span></h1>
+  <h5>
+    <a href="#">Show all jobs <fa-icon [icon]="faArrowRight"></fa-icon></a>
+  </h5>
+</div>
+
+<div class="grid-card-container">
+  <mat-card class="job-card" style="flex-grow: 1" *ngFor="let item of items">
+    <mat-card-header>
+      <div class="top-header">
+        <div
+          mat-card-avatar
+          class="category-image"
+          style="
+            background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+          "
+        ></div>
+        <p>Full Time</p>
+      </div>
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      some of discription
+    </mat-card-content>
+
+    <mat-card-actions>
+      <a href="#"
+        >999 job available <fa-icon [icon]="faArrowRight"></fa-icon
+      ></a>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div class="block-header">
+  <h1>Latest <span style="color: #28a1fc">jobs open</span></h1>
+  <h5>
+    <a href="#">Show all jobs <fa-icon [icon]="faArrowRight"></fa-icon></a>
+  </h5>
+</div>
+
+<app-job-by-category></app-job-by-category>

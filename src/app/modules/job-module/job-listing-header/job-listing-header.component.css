@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+h3{
+    margin: 0px;
+    font-weight: bold;
+}
+.container{
+    align-items: center;
+}
+
+button{
+    background-color: #fafafa;
+    color: #dcd9db;
+    border: 1px #dcd9db solid;
+}

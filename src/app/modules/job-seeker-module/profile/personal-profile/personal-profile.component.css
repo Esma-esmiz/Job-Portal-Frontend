@@ -1,0 +1,29 @@
+.container{
+    padding: 25px 0;
+}
+
+.container > div{
+    margin-bottom: 2rem;
+}
+
+h3{
+    /* padding-bottom: 0.2rem; */
+}
+h3{
+    font-weight: bold;
+}
+h4, h3{
+    margin: 0;
+}
+.basic > div, .address > div, .contact > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 15%;
+}
+.basic > div{
+    margin-bottom: 15px;
+}
+.cell{
+    padding-bottom: 0px;
+}

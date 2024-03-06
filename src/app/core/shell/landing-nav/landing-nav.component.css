@@ -1,0 +1,23 @@
+.navbar:first-of-type span{
+    font-weight: bold;
+ }
+.navbar{
+    justify-content: space-between;
+    font-size: 16px;
+    display: flex;
+    align-items: start;
+    padding: 1.5rem 2rem;
+    background: transparent;
+}
+ 
+span {
+    padding-right: 1rem;
+}
+
+a{
+    text-decoration: none;
+     color:#858c9c;
+}
+.log a{
+    color: #26a4ff;
+}

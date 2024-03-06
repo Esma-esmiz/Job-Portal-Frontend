@@ -1,0 +1,25 @@
+tr{
+    /* margin-bottom:5px ; */
+    border-spacing: 1rem 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+table{
+    border-spacing: 0 1em;
+    background-color: inherit ;
+}
+
+tr td:first-child { border-top-left-radius: 10px; }
+tr td:last-child { border-top-right-radius: 10px; }
+
+tr td:first-child { border-bottom-left-radius: 10px; }
+tr td:last-child { border-bottom-right-radius: 10px; }
+.action-btn{
+    font-weight: bold;
+}
+
+.action-list a:hover{
+ background-color: #04ade6;
+ color: #fff;
+}

@@ -1,0 +1,23 @@
+ 
+.navbar{
+    background-image: url("../../../../assets/images/landing-backround1.png");
+    background-repeat: no-repeat;
+    height: 560px;
+}
+ 
+
+.nojob{
+    position: absolute;
+    color: #fff;
+    margin-top: -28rem;
+    font-size: 50px;
+}
+ 
+.nojob p{
+    padding-bottom: 1rem;
+}
+
+ 
+
+ 
+

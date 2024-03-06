@@ -1,0 +1,26 @@
+<div class="grid-card-container">
+  <mat-card class="job-card" style="flex-grow: 1" *ngFor="let item of items">
+    <mat-card-header>
+      <div class="top-header">
+        <div
+          mat-card-avatar
+          class="category-image"
+          style="
+            background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+          "
+        ></div>
+        <mat-card-title><a href="#">job title</a></mat-card-title>
+      </div>
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-card-subtitle><span class="company">company </span> : <span class="p work-place">work place</span></mat-card-subtitle>
+      some of discription
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-button>'category'</button>
+        <button mat-button>'job modality'</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

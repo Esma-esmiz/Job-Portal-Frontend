@@ -1,0 +1,16 @@
+.filter-with-listing{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 1.5rem;
+    padding: 2rem 0;
+    border: 1px red solid;
+}
+
+app-job-filter-box{
+    width: 35%;
+}
+
+.listing{
+    width: 100%;
+}

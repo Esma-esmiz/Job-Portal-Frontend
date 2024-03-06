@@ -1,0 +1,36 @@
+table{
+   min-width: 100%;
+}
+tr > td:nth-last-child(1){
+    width: 100%;
+}
+
+
+tr > td:nth-child(1){
+  text-align: right;
+  margin-right: 30px;
+  max-width: 40%;
+}
+
+
+td{
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 60%;
+    font-size: 16px;
+     
+}
+
+.skill span{
+    border-radius: 10px;
+    padding: 6px 15px;
+    background-color: rgb(203, 226, 246);
+}

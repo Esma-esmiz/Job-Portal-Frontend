@@ -1,0 +1,24 @@
+<div class="container">
+  <mat-card class="job-card"  *ngFor="let item of items">
+    <mat-card-header>
+      <div>
+        <mat-card-title>Angular developer</mat-card-title>
+        <mat-card-subtitle>country . setup . type</mat-card-subtitle>
+      </div>
+      <div><fa-icon [icon]="faBookmark"></fa-icon></div>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>some of discription some of discription some of discription</p>
+      <div class="tip-info">
+        <p><span>$300</span>/month</p>
+        <p>5h ago</p>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <a routerLink="/detail">View details</a>
+      <a href="#">Apply</a>
+    </mat-card-actions>
+  </mat-card>
+</div>

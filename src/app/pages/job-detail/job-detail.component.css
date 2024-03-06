@@ -1,0 +1,112 @@
+.container {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  column-gap: 4%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 70%;
+}
+.left > div {
+  margin-bottom: 2rem;
+}
+h1 {
+  font-weight: bold;
+}
+
+.right {
+  width: 26%;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+  width: 100%;
+}
+
+.action-btn div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+fa-icon {
+  padding-right: 5px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  padding: 9px 35px;
+  background-color: #f1f1f1;
+  border-radius: 7px;
+}
+
+.top-applay {
+  display: block;
+  background-color: #04ade6;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4%;
+}
+
+.detail-box {
+  display: flex;
+  width: 75%;
+  border: 1px solid #04ade6;
+}
+.job-basic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.job-basic div {
+  background-color: #ccedf6;
+  max-width: none;
+  min-width: 10rem;
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 8px;
+  padding-left: 10px;
+}
+
+.job-basic h2 {
+  color: #04ade6;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.last-applay a {
+  display: block;
+  text-decoration: none;
+  width: 10rem;
+  background-color: #ffde7f;
+}
+
+mat-divider{
+    position: absolute;
+    margin-top: 8rem;
+    width: 82%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+.related-job{
+
+}

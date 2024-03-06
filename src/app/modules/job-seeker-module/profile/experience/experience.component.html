@@ -1,0 +1,58 @@
+<div class="container">
+  <mat-accordion>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+      *ngFor="let experience of experiences"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> Employer company name</mat-panel-title>
+        <mat-panel-description> Job title </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="exp-table">
+        <table>
+          <tr>
+            <td>Company:</td>
+            <td>name</td>
+          </tr>
+          <tr>
+            <td>Job Title:</td>
+            <td>title</td>
+          </tr>
+          <tr>
+            <td>Start Date:</td>
+            <td>112/585/55</td>
+          </tr>
+          <tr>
+            <td>End Date:</td>
+            <td>552/566/65</td>
+          </tr>
+          <tr>
+            <td>Salary:</td>
+            <td>10,000</td>
+          </tr>
+          <tr>
+            <td>Skills:</td>
+            <td>
+              <div class="skill">
+                <span *ngFor="let skill of skills">skill</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Description:</td>
+            <td>
+              <textarea
+                name="description"
+                id="desc"
+                cols="40"
+                rows="10"
+                disabled
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
