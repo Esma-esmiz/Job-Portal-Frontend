@@ -9,11 +9,13 @@ import { CreateJobComponent } from './create-job/create-job.component';
 import { MaterialModule } from '../../../shared/Material.Module';
 import { InputModule } from '../../../core/shell/input/input.module';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { EditJobComponent } from './edit-job/edit-job.component';
 @NgModule({
   declarations: [
     JobListPageComponent,
     CreateJobComponent,
-    JobListComponent
+    JobListComponent,
+    EditJobComponent
 
   ],
   imports: [
