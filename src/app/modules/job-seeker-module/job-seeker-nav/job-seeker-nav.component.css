@@ -19,9 +19,13 @@ a{
     padding: 0.4rem 1.5rem;
     border-radius: 5px;
 }
+a:active{
+    background-color: #b2ccf3 !important;
+}
 a:hover{
     background-color: #ebf1fa;
 }
+
 .menu-btn{
 display: flex;
 justify-content: space-between;

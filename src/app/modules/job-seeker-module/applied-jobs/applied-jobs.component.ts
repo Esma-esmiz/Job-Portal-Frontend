@@ -69,13 +69,14 @@ export class AppliedJobsComponent {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  constructor(private ort:MatSort, private aginator:MatPaginator) {
+  constructor() {
     // Create 100 users
-    const users = Array.from({ length: 100 }, (_, k) => createNewUser(k + 1));
+    const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
 
     // Assign the data to the data source for the table to render
     this.dataSource = new MatTableDataSource(users);
   }
+
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;

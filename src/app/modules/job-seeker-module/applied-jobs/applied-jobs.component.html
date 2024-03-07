@@ -1,45 +1,46 @@
 <div class="container">
   <div class="header">
     <span>Recently Applied Jobs </span>
-    <mat-form-field>
-      <mat-label>Filter By</mat-label>
-      <mat-select [formControl]="toppings" multiple>
-        <mat-select-trigger>
-          {{toppings.value?.[0] || ''}}
-          @if ((toppings.value?.length || 0) > 1) {
-          <span class="example-additional-selection">
-            (+{{ (toppings.value?.length || 0) - 1 }}
-            {{ toppings.value?.length === 2 ? "other" : "others" }})
-          </span>
+    <div class="filter">
+      <mat-form-field>
+        <mat-label>Filter By</mat-label>
+        <mat-select [formControl]="toppings" multiple>
+          <mat-select-trigger>
+            {{toppings.value?.[0] || ''}}
+            @if ((toppings.value?.length || 0) > 1) {
+            <span class="example-additional-selection">
+              (+{{ (toppings.value?.length || 0) - 1 }}
+              {{ toppings.value?.length === 2 ? "other" : "others" }})
+            </span>
+            }
+          </mat-select-trigger>
+          @for (topping of toppingList; track topping) {
+          <mat-option [value]="topping">{{ topping }}</mat-option>
           }
-        </mat-select-trigger>
-        @for (topping of toppingList; track topping) {
-        <mat-option [value]="topping">{{ topping }}</mat-option>
-        }
-      </mat-select>
-    </mat-form-field>
-    <div>
-      <form class="example-form">
+        </mat-select>
+      </mat-form-field>
+      <div>
+        <!-- <form class="example-form">
         <div class="search">
           <input name="applied-job-title" />
           <button mat-button type="submit">
             <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
           </button>
         </div>
-      </form>
+      </form> -->
+        <mat-form-field>
+          <mat-label>Filter</mat-label>
+          <input
+            matInput
+            (keyup)="applyFilter($event)"
+            placeholder="Ex. Mia"
+            #input
+          />
+        </mat-form-field>
+      </div>
     </div>
   </div>
   <div class="table">
-    <mat-form-field>
-      <mat-label>Filter</mat-label>
-      <input
-        matInput
-        (keyup)="applyFilter($event)"
-        placeholder="Ex. Mia"
-        #input
-      />
-    </mat-form-field>
-
     <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource" matSort>
         <!-- ID Column -->

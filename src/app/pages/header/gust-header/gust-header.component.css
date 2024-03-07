@@ -1,23 +1,22 @@
- 
-.navbar{
-    background-image: url("../../../../assets/images/landing-backround1.png");
-    background-repeat: no-repeat;
-    height: 560px;
-}
- 
-
-.nojob{
-    position: absolute;
-    color: #fff;
-    margin-top: -28rem;
-    font-size: 50px;
-}
- 
-.nojob p{
-    padding-bottom: 1rem;
+.navbar {
+  background-image: url("../../../../assets/images/landing-backround1.png");
+  background-repeat: no-repeat;
+  height: 560px;
+  width: 100%;
+  background-size:     cover; 
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: inset   0px 400px 150px 20px rgba(2, 53, 70, 0.6);
 }
 
- 
+.nojob {
+  position: absolute;
+  color: #fff;
+  margin-top: -28rem;
+  font-size: 50px;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
 
- 
-
+.nojob p {
+  padding-bottom: 1rem;
+}
