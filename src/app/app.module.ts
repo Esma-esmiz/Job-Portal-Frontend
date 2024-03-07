@@ -21,6 +21,7 @@ import { JobListingPageComponent } from './pages/job-listing-page/job-listing-pa
 import { JobGustNavComponent } from './core/shell/job-gust-nav/job-gust-nav.component';
 import { LandingNavComponent } from './core/shell/landing-nav/landing-nav.component';
 import { JobDetailComponent } from './pages/job-detail/job-detail.component';
+import { AfterCategoryComponent } from './pages/after-category/after-category.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { JobDetailComponent } from './pages/job-detail/job-detail.component';
     JobGustNavComponent,
     LandingNavComponent,
     JobDetailComponent,
+    AfterCategoryComponent,
   ],
   imports: [
     BrowserModule,

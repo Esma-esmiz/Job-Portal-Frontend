@@ -1,5 +1,6 @@
 .navbar:first-of-type span{
     font-weight: bold;
+    color: #26a4ff;
  }
 .navbar{
     justify-content: space-between;
@@ -16,7 +17,7 @@ span {
 
 a{
     text-decoration: none;
-     color:#858c9c;
+     color:#d4cece;
 }
 .log a{
     color: #26a4ff;

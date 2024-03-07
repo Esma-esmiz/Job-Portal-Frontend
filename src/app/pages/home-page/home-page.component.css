@@ -16,10 +16,12 @@ h1 {
   font-weight: bolder;
   font-size: 30px;
 }
+
 a {
   text-decoration: none;
   color: #28a1fc;
 }
+
 .grid-card-container {
   /* padding-right: 10%; */
   display: flex;
@@ -31,12 +33,15 @@ a {
   row-gap: 25px;
   max-width: 95% ;
 }
+
 .category-card {
-  min-width: 200px;
+  min-width: 15vw;
 }
+
 .category-image {
     background-size: cover;
   }
+
 mat-card-header fa-icon {
   max-width: 70x;
   max-height: 20px;
@@ -70,3 +75,5 @@ img{
     padding:3px 5px;
     align-items: right;
   }
+
+ 
