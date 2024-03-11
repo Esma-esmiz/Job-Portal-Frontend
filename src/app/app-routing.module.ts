@@ -7,14 +7,21 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { JobDetailComponent } from './pages/job-detail/job-detail.component';
 import { JobSeekerProfilePageComponent } from './modules/job-seeker-module/profile/job-seeker-profile-page/job-seeker-profile-page.component';
 import { DashboardComponent } from './modules/employer-module/dashboard/dashboard.component';
+import { LoginComponent } from './modules/auth/login/login.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: HomePageComponent },
+  {
+    path: 'auth',
+    // component: LoginComponent,
+    loadChildren: () =>
+      import('./modules/auth/auth.module').then((m) => m.AuthModule),
+  },
   { path: 'find-job', component: JobListingPageComponent },
   { path: 'detail', component: JobDetailComponent },
   {
     path: 'job-seeker',
-    component:JobSeekerProfilePageComponent,
+    component: JobSeekerProfilePageComponent,
     loadChildren: () =>
       import('./modules/job-seeker-module/job-seeker-module.module').then(
         (m) => m.JobSeekerModuleModule
@@ -22,7 +29,7 @@ const routes: Routes = [
   },
   {
     path: 'employer',
-    component:DashboardComponent,
+    component: DashboardComponent,
     loadChildren: () =>
       import('./modules/employer-module/employer-module.module').then(
         (m) => m.EmployerModuleModule
